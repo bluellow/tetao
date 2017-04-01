@@ -1,33 +1,4 @@
-body{font-family: 微软雅黑;color: #797979;font-size: 16px;}
-a{font-family: 微软雅黑;color:#797979;font-size: 16px;}
 
-header{}
-header p{line-height: 24px;color: #fff;}
-header .top{height: 50px;background: #ff936a;overflow: hidden;}
-header .top .container{width: 1200px;margin: 13px auto 0px;padding: 0;}
-header .top .container div{margin-right: 30px;}
-header .top a{display:block;font-size: 12px;width: 45px;height: 24px;line-height: 24px;text-align: center;
-    background: #fff;text-decoration: none;}
-header .top a.signin{border-right: 1px solid #dcdcdc;border-radius: 9px 0px 0px 9px;;}
-header .top a.signup{border-radius: 0px 9px 9px 0px;}
-
-@media screen and (max-width: 1024px) {
-    header .top{display: none;}
-}
-
-header .navbar{border: 0;border-radius: 0;}
-/*.navbar-brand {*/
-    /*float: left;*/
-    /*width: 204px;*/
-    /*height: 47px;*/
-    /*!*padding: 15px 15px;*!*/
-    /*font-size: 18px;*/
-    /*!*line-height: 20px;*!*/
-/*}*/
-
-.navbar{height: 60px;margin: 0;}
-
-.navbar-header .navbar-brand{height: 60px;weight:204px;padding: 0;margin: 0;}
 
 
 
