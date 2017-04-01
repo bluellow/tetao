@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1,h2,h3,h4,h5,h6,p,a,span,ol,ul,input,img,dt,dd{margin:0;padding: 0;}
+
+
+
+
+img{
+    display: block;
+    border: none;
+}
+
+a{text-decoration: none;outline: none;}
+input{outline: none;}
+
+ol,ul{list-style: none;  }
+
+.clearfix{zoom:1;}
+
+.clearfix:after{
+    content: "";
+    display: block;
+    clear:both;
+    visibility: hidden;
+    height: 0;
+    line-height:0;
+}
+
+.fl{float: left;}
+
+.fr{float: right;}
+.show{display: block;}
+.hide{display: none;}
