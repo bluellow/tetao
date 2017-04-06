@@ -9,9 +9,9 @@ a{font-family: 微软雅黑;}
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
     /*background: none;*/
 }
+header .container {margin-top: 40px;margin-bottom: 30px;}
 
-
-header{}
+header{position: relative;}
 header p{line-height: 24px;color: #fff;}
 header .top{height: 50px;background: #c40000;overflow: hidden;}
 header .top .container{margin-top: 13px;}
@@ -21,27 +21,38 @@ header .top a{display:block;font-size: 12px;width: 45px;height: 24px;line-height
 header .top a.signin{border-right: 1px solid #dcdcdc;border-radius: 9px 0px 0px 9px;;}
 header .top a.signup{border-radius: 0px 9px 9px 0px;}
 
-@media screen and (max-width: 1024px) {
-    header .top{display: none;}
-}
+
 
 header .navbar{border: none;height: 150px;}
 header .logo{margin-top: 15px;}
-header .navbar li a{margin: 0 25px;width:70px;height: 73px;background: #fff;padding: 0;line-height: 73px;text-align: center;color: #505050;}
-header .navbar li a::before{display:none;content:""; left: -25px; top: 0px; border-bottom: 73px solid #c40000;
+
+
+@media screen and (min-width:1200px){
+    header .navbar li a{margin: 0 25px;width:70px;height: 73px;background: #fff;padding: 0;line-height: 73px;text-align: center;color: #505050;}
+    header .navbar li a::before{display:none;content:""; left: -25px; top: 0px; border-bottom: 73px solid #c40000;
     border-left: 25px solid transparent;  }
-header .navbar li a::after{display:none;content:""; right: -25px; top: 0px; border-top: 73px solid #c40000;
+    header .navbar li a::after{display:none;content:""; right: -25px; top: 0px; border-top: 73px solid #c40000;
     border-right: 25px solid transparent;  }
+    header .navbar li a:hover{color: #c40000;background: #c40000;}
+    header .navbar li a:hover::before,
+    header .navbar li a:hover::after {position: absolute; display: block;}
+    header .navbar li.active a::before,
+    header .navbar li.active a::after {position: absolute; display: block;}
+}
 
 
-header .navbar li a:hover{color: #c40000;background: #c40000;}
-header .navbar li a:hover::before,
-header .navbar li a:hover::after {position: absolute; display: block;}
-header .navbar li.active a::before,
-header .navbar li.active a::after {position: absolute; display: block;}
+@media screen and (max-width: 1199px) {
+    header .top{display: none;}
+    header .navbar{border: none;height: 80px;}
+}
 
-header .container {margin-top: 40px;}
 
+@media screen and (max-width: 1023px){
+
+}
+
+
+.navbar-header{margin: 0 !important;}
 
 
 
